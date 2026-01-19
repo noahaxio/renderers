@@ -1,3 +1,5 @@
+module.paths.push('/home/debix/.node-red/node_modules');
+
 const { ChartJSNodeCanvas } = require('chartjs-node-canvas');
 
 // --- 1. GLOBAL COLOUR SYSTEM ---
