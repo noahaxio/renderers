@@ -1,3 +1,4 @@
+module.paths.push('/home/debix/.node-red/node_modules');
 const { createCanvas, loadImage } = require('canvas');
 const fs = require('fs');
 const path = require('path');

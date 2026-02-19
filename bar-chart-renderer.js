@@ -1,4 +1,5 @@
 // chart-renderer.js
+module.paths.push('/home/debix/.node-red/node_modules');
 const { createCanvas } = require('canvas');
 const Chart = require('chart.js/auto');
 
