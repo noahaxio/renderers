@@ -1,6 +1,6 @@
 // pie-chart-renderer.js
 module.paths.push('/home/debix/.node-red/node_modules');
-const { createCanvas } = require('@napi-rs/canvas');
+const { createCanvas } = require('canvas');
 const Chart = require('chart.js/auto');
 
 // --- 1. GLOBAL COLOUR SYSTEM ---
