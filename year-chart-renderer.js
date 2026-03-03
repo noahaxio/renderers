@@ -155,7 +155,10 @@ async function renderYearlyChart(data) {
                     },
                     grid: { color: '#e5e5e5' },
                     ticks: {
-                        color: '#000000' // <--- ADDED: Explicitly black for numbers
+                        color: '#000000', // <--- ADDED: Explicitly black for numbers
+                        callback: function(value) {
+                            return value.toLocaleString('en-US').replace(/,/g, ' ');
+                        }
                     }
                 },
                 x: {

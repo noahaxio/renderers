@@ -132,7 +132,12 @@ module.exports = function renderBarChart(sensorArray, yAxisLabel = "kWh") {
                                 color: '#000000', // --- CHANGED: Explicitly Black ---
                                 font: { weight: 'bold' } 
                             },
-                            ticks: { color: '#000000' } // --- CHANGED: Explicitly Black ---
+                            ticks: { 
+                                color: '#000000', // --- CHANGED: Explicitly Black ---
+                                callback: function(value) {
+                                    return value.toLocaleString('en-US').replace(/,/g, ' ');
+                                }
+                            } 
                         }
                     },
                     plugins: {
